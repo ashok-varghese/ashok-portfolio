@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashok Varghese Mathai</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
+        
+        /* Navbar */
+        nav { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); padding: 15px 0; box-shadow: 0 5px 20px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .nav-container { max-width: 1000px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5em; font-weight: bold; background: linear-gradient(45deg, #3498db, #2ecc71); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-links { display: flex; list-style: none; gap: 30px; }
+        .nav-links a { color: #2c3e50; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: #3498db; }
+        
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        header { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-radius: 20px; padding: 30px; text-align: center; margin-bottom: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .profile-header { display: flex; align-items: center; gap: 30px; flex-wrap: wrap; justify-content: center; }
+        .profile-photo { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border: 5px solid white; }
+        .profile-info h1 { font-size: 3em; background: linear-gradient(45deg, #3498db, #2ecc71); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
+        .contact { font-size: 1.2em; margin: 15px 0; }
+        .contact a { color: #3498db; text-decoration: none; font-weight: bold; }
+        .contact a:hover { text-decoration: underline; }
+        
+        h2 { color: #2c3e50; font-size: 2em; margin: 30px 0 20px; position: relative; }
+        h2::after { content: ''; position: absolute; bottom: -10px; left: 0; width: 50px; height: 4px; background: linear-gradient(45deg, #3498db, #2ecc71); border-radius: 2px; }
+        .section { background: rgba(255,255,255,0.9); backdrop-filter: blur(10px); padding: 25px; margin-bottom: 25px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .skills { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 15px; }
+        .skill-tag { background: linear-gradient(45deg, #3498db, #2980b9); color: white; padding: 10px 18px; border-radius: 25px; font-size: 14px; font-weight: 500; transition: transform 0.3s; }
+        .skill-tag:hover { transform: translateY(-3px); }
+        ul { list-style: none; padding-left: 0; }
+        li { padding: 12px 0; border-bottom: 1px solid #eee; }
+        li:last-child { border-bottom: none; }
+        .highlight { background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%); padding: 15px; border-radius: 10px; margin: 15px 0; }
+        
+        /* Footer */
+        footer { background: rgba(44, 62, 80, 0.95); color: white; text-align: center; padding: 30px 20px; margin-top: 50px; }
+        .footer-content { max-width: 1000px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; }
+        .footer-links { display: flex; gap: 20px; }
+        .footer-links a { color: #3498db; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .footer-links a:hover { color: #2ecc71; }
+        .deployed { font-size: 0.9em; opacity: 0.8; }
+        
+        @media (max-width: 768px) { 
+            .nav-links { gap: 15px; font-size: 0.9em; }
+            .profile-header { flex-direction: column; text-align: center; }
+            h1 { font-size: 2em; } 
+            .container { padding: 10px; }
+            .footer-content { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">AVM</div>
+            <ul class="nav-links">
+                <li><a href="#profile">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Header with Photo -->
+        <header id="profile">
+            <div class="profile-header">
+                <img src="photo.jpg" alt="Ashok Varghese Mathai" class="profile-photo">
+                <div class="profile-info">
+                    <h1>Ashok Varghese Mathai</h1>
+                    <div class="contact">
+                        📞 <strong>6238493228</strong> | 
+                        ✉️ <strong>ashokvarghese35@gmail.com</strong> | 
+                        📍 <strong>Wayanad, Kerala</strong> | 
+                        <a href="https://www.linkedin.com/in/ashokvarghesemathai" target="_blank">💼 LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="section highlight" id="profile-section">
+            <h2>👨‍💻 Profile</h2>
+            <p>Master's in Computer Applications (MCA) student at Kristu Jayanti University, Bangalore with strong programming skills in <strong>C, C++, Python, Java</strong> and expertise in digital electronics & circuit design. Programming Intern with hands-on software development experience.</p>
+        </div>
+
+        <div class="section" id="education">
+            <h2>🎓 Education</h2>
+            <ul>
+                <li><strong>Master of Computer Applications (MCA)</strong><br>Kristu Jayanti University, Bangalore (2025-Present)<br></li>
+                <li><strong>BSc Computer Science & Electronics</strong><br>Kristu Jayanti College, Bengaluru (2022-2025)<br></li>
+                <li><strong>12th Computer Science</strong><br>Govt. Model HSS for Boys, Thrissur (2020-2022)<br></li>
+                <li><strong>10th</strong><br>J.M.J. English Medium HSS, Thrissur (2019-2020)<br></li>
+            </ul>
+        </div>
+
+        <div class="section" id="skills">
+            <h2>🛠️ Technical Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">C, C++</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Verilog/VHDL</span>
+                <span class="skill-tag">TallyPrime</span>
+                <span class="skill-tag">MS Office</span>
+            </div>
+        </div>
+
+        <div class="section" id="experience">
+            <h2>🏆 Experience & Achievements</h2>
+            <ul>
+                <li><strong>Programming Intern</strong> - Kristu Jayanti Software Development Centre (June-July 2024)<br>Software development & hardware integration</li>
+                <li><strong>2nd Prize</strong> - PLUTONIA Physical Science Exhibition (2024)</li>
+                <li><strong>NPTEL Certified</strong> - Programming in Java (2023)</li>
+                <li><strong>NPTEL Certified</strong> - Advances in Applied Physics (2023)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>👥 Leadership & Soft Skills</h2>
+            <ul>
+                <li>Team Lead - PLUTONIA Exhibition (2024)</li>
+                <li>Core Team - Youth Red Cross (2024)</li>
+                <li>Volunteer - NSS (2020-2022)</li>
+                <li>Scout - Bharat Scouts & Guides (2017-2020)</li>
+                <li><strong>Creative Communication • Teamwork • Leadership • Problem Solving • Analytic Thinking</strong></li>
+            </ul>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>🌐 Languages</h2>
+            <ul>
+                <li>🇺🇸 English - Speaking, Reading, Writing</li>
+                <li>🇮🇳 Hindi - Speaking, Reading, Writing</li>
+                <li>🇮🇳 Malayalam - Speaking, Reading, Writing</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <p>&copy; 2025 Ashok Varghese Mathai. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/yourusername/your-repo" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/ashokvarghesemathai" target="_blank">LinkedIn</a>
+                <a href="mailto:ashokvarghese35@gmail.com">Email</a>
+                <a href="https://www.instagram.com/ashok_varghese?igsh=MTNiMXp3andud2ozNQ==">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
